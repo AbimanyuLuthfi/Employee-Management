@@ -8,6 +8,9 @@ class ProdukController extends BaseController
 {
     public function index()
     {
-        return view('admin/produk/index');
+        $data = [
+            'title' => 'Produk | Comprof'
+        ];
+        return view('admin/produk/index', $data);
     }
 }

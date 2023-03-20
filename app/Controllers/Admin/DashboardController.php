@@ -7,6 +7,9 @@ class DashboardController extends BaseController
 {
     public function index()
     {
-        return view('/admin/dashboard/index');
+        $data = [
+            'title' => 'Admin Dashboard | Comprof'
+        ];
+        return view('/admin/dashboard/index', $data);
     }
 }
